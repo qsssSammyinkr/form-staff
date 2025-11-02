@@ -7,44 +7,76 @@
     font-family: "Poppins", sans-serif;
 }
 
-:root{
-  /* Palette principal (HSL para fácil ajuste) */
-  --h-primary: 220;    /* tom */
-  --s-primary: 85%;    /* saturação */
-  --l-primary: 55%;    /* luminosidade */
-
-  --primary: hsl(var(--h-primary) var(--s-primary) var(--l-primary));
-  --primary-600: hsl(var(--h-primary) var(--s-primary) calc(var(--l-primary) - 8%));
-  --primary-400: hsl(var(--h-primary) var(--s-primary) calc(var(--l-primary) + 8%));
-
-  /* Neutros / superfícies */
-  --bg: 255 255% 99%;
-  --surface: 0 0% 100%;
-  --muted: 220 10% 60%;
-
-  --bg-color: hsl(var(--bg));
-  --surface-color: hsl(var(--surface));
-  --muted-color: hsl(var(--muted));
-
-  /* Texto */
-  --text: 220 10% 12%;
-  --text-muted: 220 8% 45%;
-
-  --text-color: hsl(var(--text));
-  --text-muted-color: hsl(var(--text-muted));
-
-  /* Estados */
-  --success: hsl(150 60% 35%);
-  --warning: hsl(42 95% 50%);
-  --danger:  hsl(352 75% 48%);
-
-  /* Borda / sombra */
-  --border: 220 10% 92%;
-  --shadow: 0 4px 20px rgba(13,18,25,0.06);
-
-  /* Espaço para ajustes rápidos */
+:root {
   --radius: 10px;
-  --glass: rgba(255,255,255,0.6);
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* ====== 1. Tema Escuro Moderno (Dashboard) ====== */
+[data-theme="dark"] {
+  --primary: #3a6ff7;
+  --bg: #0f111a;
+  --surface: #1a1c25;
+  --text: #e4e7ef;
+  --text-muted: #9ca3af;
+  --border: #2a2d36;
+  --success: #22c55e;
+  --warning: #facc15;
+  --danger: #ef4444;
+}
+
+/* ====== 2. Tema Vibrante Gamer ====== */
+[data-theme="gamer"] {
+  --primary: #7b2ff7;
+  --bg: #0d0d16;
+  --surface: #151521;
+  --text: #e8e8ff;
+  --text-muted: #a1a1c1;
+  --border: #262638;
+  --success: #00ffae;
+  --warning: #ffb800;
+  --danger: #ff3860;
+  --neon: #00fff7;
+}
+
+/* ====== 3. Tema Azul Minimalista (Corporate) ====== */
+[data-theme="corporate"] {
+  --primary: #2563eb;
+  --bg: #f5f7fb;
+  --surface: #ffffff;
+  --text: #1e293b;
+  --text-muted: #64748b;
+  --border: #e2e8f0;
+  --success: #16a34a;
+  --warning: #facc15;
+  --danger: #dc2626;
+}
+
+/* ====== 4. Tema Neon Roxo e Preto ====== */
+[data-theme="neon"] {
+  --primary: #9f00ff;
+  --bg: #0b0014;
+  --surface: #150022;
+  --text: #f5e9ff;
+  --text-muted: #c5a3ff;
+  --border: #2f004d;
+  --success: #7affc0;
+  --warning: #ffec70;
+  --danger: #ff3f6b;
+  --glow: 0 0 15px var(--primary);
+}
+
+/* ====== 5. Tema Claro e Clean (Google style) ====== */
+[data-theme="clean"] {
+  --primary: #1a73e8;
+  --bg: #ffffff;
+  --surface: #f8f9fa;
+  --text: #202124;
+  --text-muted: #5f6368;
+  --border: #dadce0;
+  --success: #34a853;
+  --warning: #fbbc04;
+  --danger: #ea4335;
 }
 
 /* Tema escuro (troque por [data-theme="dark"] ou .dark no body conforme preferir) */
@@ -73,5 +105,5 @@
 
 /* ====== Estilo cabecalho ====== */
 header {
-    background-color: var(--primary-400);
+    background-color: var(--neon)
 }
