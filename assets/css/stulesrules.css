@@ -105,5 +105,5 @@
 
 /* ====== Estilo cabecalho ====== */
 header {
-    background-color: var(--neon)
+    background-color: linear-gradient(45deg, var(--primary), var(--neon));
 }
