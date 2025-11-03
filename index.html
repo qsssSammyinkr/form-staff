@@ -3,211 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Dashboard</title>
-    <!-- ====== Styles ====== -->
-     <link rel="stylesheet" href="/assets/css/style.css">
-</head>
-
-<body>
-    <!-- ====== Navigation ====== -->
-     <div class="container">
-        <div class="navigation">
-            <ul>
-                <li>
-                    <a href="#">
-                        <span class="icon">
-                            <ion-icon name="laptop-outline"></ion-icon>
-                        </span>
-                        <span class="title">Staff Guide FF&C</span>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#">
-                        <span class="icon">
-                            <ion-icon name="home-outline"></ion-icon>
-                        </span>
-                        <span class="title">Dashboard</span>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="assets/dashboard/rules.html">
-                        <span class="icon">
-                            <ion-icon name="book-outline"></ion-icon>
-                        </span>
-                        <span class="title">Staff Rules</span>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#">
-                        <span class="icon">
-                            <ion-icon name="hammer-outline"></ion-icon>
-                        </span>
-                        <span class="title">Tools</span>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#">
-                        <span class="icon">
-                            <ion-icon name="help-circle-outline"></ion-icon>
-                        </span>
-                        <span class="title">Help</span>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#">
-                        <span class="icon">
-                            <ion-icon name="settings-outline"></ion-icon>
-                        </span>
-                        <span class="title">Settings</span>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#">
-                        <span class="icon">
-                            <ion-icon name="lock-closed-outline"></ion-icon>
-                        </span>
-                        <span class="title">Password</span>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#">
-                        <span class="icon">
-                            <ion-icon name="log-in-outline"></ion-icon>
-                        </span>
-                        <span class="title">Sign Out</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-
-        <!-- ====== Main ====== -->
-         <div class="main">
-            <div class="topbar">
-                <div class="toggle">
-                    <ion-icon name="menu-outline"></ion-icon>
-                </div>
-
-                <div class="search">
-                    <label>
-                        <input type="text" placeholder="Search here">
-                        <ion-icon name="search-outline"></ion-icon>
-                    </label>
-                </div>
-
-                <div class="user">
-                    <img src="/assets/img/logo1.png" alt="">
-                </div>
-            </div>
-
-            <!-- ====== Cards ====== -->
-             <div class="cardBox">
-                <div class="card">
-                    <div>
-                        <div class="numbers">2</div>
-                        <div class="cardName">Staff Totals</div>
-                    </div>
-
-                    <div class="iconBx">
-                        <ion-icon name="person-add-outline"></ion-icon>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div>
-                        <div class="numbers">109</div>
-                        <div class="cardName">Members Totals</div>
-                    </div>
-
-                    <div class="iconBx">
-                        <ion-icon name="people-circle-outline"></ion-icon>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div>
-                        <div class="numbers">17</div>
-                        <div class="cardName">Bots Totals</div>
-                    </div>
-
-                    <div class="iconBx">
-                        <ion-icon name="code-download-outline"></ion-icon>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div>
-                        <div class="numbers">1</div>
-                        <div class="cardName">Owners Totals</div>
-                    </div>
-
-                    <div class="iconBx">
-                       <ion-icon name="crop-outline"></ion-icon>
-                    </div>
-                </div>
-             </div>
-
-             <!-- ====== Add Charts Js ====== -->
-              <div class="chartsBx">
-                <div class="chart"> <canvas id="chart-1"></canvas> </div>
-                <div class="chart"> <canvas id="chart-2"></canvas> </div>
-              </div>
-
-             <!-- ====== Details ====== -->
-              <div class="details">
-                <div class="staffd">
-                    <div class="cardHeader">
-                        <h2>Staffs</h2>
-                        <a href="#" class="btn">View all</a>
-                    </div>
-
-                    <table>
-                        <thead>
-                            <tr>
-                                <td>Name</td>
-                                <td>Role</td>
-                                <td>Status</td>
-                            </tr>
-                        </thead>
-                    </table>
-
-                    <table>
-                        <tbody>
-                            <tr>
-                                <td>Noah</td>
-                                <td>Executive</td>
-                                <td class="status Noah"><span>Disponible</span></td>
-                            </tr>
-
-                            <tr>
-                                <td>Pubby</td>
-                                <td>Developer</td>
-                                <td class="status Pubby"><span>Disponible</span></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-              </div>
-         </div>
-     </div>
-
-     <!-- ====== Script ====== -->
-    <script src="/assets/js/main.js"></script>
-
-     <!-- ====== Charts ====== -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.1/dist/chart.umd.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
-    <script src="/assets/js/chartsJS.js"></script>
-
-     <!-- ====== ionicons ====== -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-</body>
+    <link rel="stylesheet" href="/assets/css/stylei.css">
+    <title>Login</title>
+</head>
+<body>
+    
+    <main id="tela-login-registro">
 
+        <!-- LOGIN -->
+        <div class="interface" id="login">
+            <section class="tela-login">
+                <h1>Make your <span>login</span></h1>
+
+                <form id="form-login">
+                    <input type="email" name="email" id="email-login" placeholder="your email">
+                    <input type="password" name="password" id="senha-login" placeholder="your password">
+                    <a href="#">Forget Password?</a>
+                  <div id="login-msg"></div>
+                    <input type="submit" value="Login">
+                    <p id="login-msg" class="login-msg"></p>
+                </form>
+
+                <article class="opt-login">
+                    <p>Or login with:</p>
+                    <div class="btn-opt-login">
+                        <button><ion-icon name="logo-google"></ion-icon></button>
+                        <button><ion-icon name="logo-github"></ion-icon></button>
+                        <button><ion-icon name="logo-facebook"></ion-icon></button>
+                    </div>
+                </article>
+
+                <article class="txt-criar-conta-login">
+                    <p>Don't have an account? <a href="#" id="btn-registro">Create now</a></p>
+                </article>
+            </section>
+
+            <section class="img-decoracao img-login"></section>
+        </div>
+
+        <!-- REGISTRO -->
+        <div class="interface" id="criar-conta">
+            <section class="img-decoracao img-register"></section>
+
+            <section class="tela-login">
+                <h1>Make your <span>Account</span></h1>
+
+                <form id="form-register">
+                    <div class="nome-sobrenome">
+                        <input type="text" name="name" id="nome-register" placeholder="your name">
+                        <input type="text" name="surname" id="sobrenome-register" placeholder="your surname">
+                    </div>
+
+                    <input type="email" name="email" id="email-register" placeholder="your email">
+                    <input type="password" name="password" id="senha-register" placeholder="your password">
+                    <input type="submit" value="Create Account">
+                </form>
+
+                <article class="txt-criar-conta-login">
+                    <p>Already have an account? <a href="#" id="btn-login">Login here!</a></p>
+                </article>
+            </section>
+        </div>
+
+    </main>
+
+    <script src="/assets/js/login-r.js"></script>
+</body>
 </html>
