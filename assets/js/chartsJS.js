@@ -8,7 +8,7 @@ if (ctx1) {
       labels: ['Staff', 'Members', 'Bots', 'Owner'], // nomes das seções
       datasets: [{
         label: 'Total',
-        data: [2, 109, 17, 1], // seus valores
+        data: [2, 108, 17, 1], // seus valores
         backgroundColor: [
           'rgba(255, 99, 132, 0.5)',
           'rgba(54, 162, 235, 0.5)',
@@ -69,7 +69,7 @@ if (ctx2) {
       labels: ['Staff', 'Members', 'Bots', 'Owner'], // nomes das categorias
       datasets: [{
         label: 'total',
-        data: [2, 109, 17, 1], // seus valores
+        data: [2, 108, 17, 1], // seus valores
         backgroundColor: [
           'rgba(255, 99, 132, 0.5)',
           'rgba(54, 162, 235, 0.5)',
